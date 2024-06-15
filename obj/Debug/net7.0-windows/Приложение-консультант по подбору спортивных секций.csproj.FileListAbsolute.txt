@@ -1,0 +1,99 @@
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.exe
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.deps.json
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.runtimeconfig.json
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.pdb
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.Auth.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.Properties.Resources.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.csproj.GenerateResource.cache
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.GeneratedMSBuildEditorConfig.editorconfig
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.AssemblyInfoInputs.cache
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.AssemblyInfo.cs
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.csproj.CoreCompileInputs.cache
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\refint\Приложение-консультант по подбору спортивных секций.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.pdb
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.genruntimeconfig.cache
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\ref\Приложение-консультант по подбору спортивных секций.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.Registration.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.EditUserInfo.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.MainWnd.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.csproj.AssemblyReference.cache
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.AddAchieve.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Azure.Core.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Azure.Identity.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\System.Memory.Data.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x64\native\msalruntime.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение-консультант по подбору спортивных секций.csproj.CopyComplete
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.AboutBox1.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.SectionWnd.resources
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\ML Data\test-data.csv
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\ML Data\train-data.csv
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.Core.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.Data.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.KMeansClustering.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.PCA.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.StandardTrainers.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.Transforms.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.CpuMath.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.DataView.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Microsoft.ML.Recommender.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\System.Numerics.Tensors.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libLdaNative.so
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libLdaNative.so
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libLdaNative.so
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libLdaNative.dylib
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libLdaNative.dylib
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-arm64\native\LdaNative.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x64\native\LdaNative.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x86\native\LdaNative.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libMatrixFactorizationNative.so
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libMatrixFactorizationNative.so
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libMatrixFactorizationNative.so
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libMatrixFactorizationNative.dylib
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libMatrixFactorizationNative.dylib
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-arm64\native\MatrixFactorizationNative.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x64\native\MatrixFactorizationNative.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\bin\Debug\net7.0-windows\runtimes\win-x86\native\MatrixFactorizationNative.dll
+D:\MPEI\8 семестр\Ремизов Выпускная работа\Приложение-консультант по подбору спортивных секций\obj\Debug\net7.0-windows\Приложение_консультант_по_подбору_спортивных_секций.ChangePassword.resources
