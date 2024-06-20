@@ -15,11 +15,15 @@ namespace Приложение_консультант_по_подбору_спо
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.labelProductName.Text = "Приложение-консультант по подбору спортивных секций";
+            this.labelVersion.Text = "Version 1.0";
+            this.labelCopyright.Text = "Ремизов Дмитрий, А-05-20";
+            this.labelCompanyName.Text = "ФГБОУ \"НИУ \"МЭИ\"";
+            this.textBoxDescription.Text = "Данную выпускную квалификационную выпускную работу выполнил Ремизов Дмитрий Павлович, студент группы А-05-20" +
+                " ФГБОУ ВО «Национальный исследовательский университет «Московский энергетический институт» в 2024 году. \n\tТема работы: «Разработка приложения-советника выбора спортивной секции»." +
+                "\r\n\r\nРабота посвящена разработке приложения, которое рекомендует спортивные секции пользователю на основании данных, указанных им в приложении. Цель работы: создание приложения-советника, " +
+                "в котором на основании данных о пользователе, таких как пол, рост, вес, возраст, место проживания и спортивные достижения, а также статистических данных, программой предлагаются рекомендации " +
+                "по выбору спортивной секции.\r\n\r\n";
         }
 
         #region Assembly Attribute Accessors
@@ -105,6 +109,11 @@ namespace Приложение_консультант_по_подбору_спо
         private void textBoxDescription_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

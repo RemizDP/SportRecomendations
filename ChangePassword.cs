@@ -96,7 +96,7 @@ namespace Приложение_консультант_по_подбору_спо
                     }
                     else
                     {
-                        MessageBox.Show("Пароли не совпадают!", "Ошибка"); 
+                        MessageBox.Show("Пароли не совпадают!", "Ошибка");
                         EnterButton.Enabled = true;
                         return;
                     }

@@ -218,7 +218,7 @@
   <data name="TrainModelButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQ4AAABGCAYAAAA9zXoQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAEkxJREFUeF7t3c+rtclRB/D3z1ARnEgggqKguBDcxE1wJW6ycSEEQbLJJhAkCEGy
+        vAAADrwBlbxySQAAEkxJREFUeF7t3c+rtclRB/D3z1ARnEgggqKguBDcxE1wJW6ycSEEQbLJJhAkCEGy
         EILiamAYmJXgWoKiuJMsksXMzkBMQDSZXzozcaJDmIQhx/rUdD3p85ynzz33vjPXWdQXiudHd1dXv1Df
         p6q6z3ufvPXzHz89qvzMM6c3f/ZjKW/8widO//lLv3Z6/eO/fHrlmU+kuPdOW/Uz5lDXhyiNRmONRyUO
         pPDdT//B6ZUvffn06vMvnF7726+e3vj6N1L+65+/llLP2vTR1xhjj3R+WNJoNNZ4POKIqOHlz37u9MO3
@@ -323,7 +323,7 @@
         JIfG11/oLoJG1/0DvnKFxXmlU80AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AnalyticsButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQ0AAABGCAMAAADhJDEhAAAABGdBTUEAALGPC/xhBQAAAEJQTFRF////
         82Zr9oiM6SQs+/z83mNo//7+7Rwk7Rgg7Roi8qir5UBG5Hp+8d7f6bu95zE4+PX156Wn7szO5ZGV5FBW

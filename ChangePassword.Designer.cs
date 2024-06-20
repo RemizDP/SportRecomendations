@@ -153,7 +153,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ChangePassword";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ChangePassword";
+            Text = "Смена пароля";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

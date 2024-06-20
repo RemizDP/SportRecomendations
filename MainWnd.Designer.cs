@@ -53,7 +53,7 @@
             OnlineFilterBox = new CheckBox();
             MLRecommendationsBox = new CheckBox();
             ChangePasswordButton = new Button();
-            button2 = new Button();
+            AnalyticsButton = new Button();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             UserFilterBox.SuspendLayout();
@@ -66,7 +66,7 @@
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
             menuStrip.Padding = new Padding(7, 2, 0, 2);
-            menuStrip.Size = new Size(1823, 24);
+            menuStrip.Size = new Size(1904, 24);
             menuStrip.TabIndex = 0;
             menuStrip.Text = "MenuStrip";
             // 
@@ -109,10 +109,10 @@
             // statusStrip
             // 
             statusStrip.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel });
-            statusStrip.Location = new Point(0, 834);
+            statusStrip.Location = new Point(0, 939);
             statusStrip.Name = "statusStrip";
             statusStrip.Padding = new Padding(1, 0, 16, 0);
-            statusStrip.Size = new Size(1823, 22);
+            statusStrip.Size = new Size(1904, 22);
             statusStrip.TabIndex = 2;
             statusStrip.Text = "StatusStrip";
             // 
@@ -251,6 +251,7 @@
             ContentFilterButton.TabStop = true;
             ContentFilterButton.Text = "Контентная фильтрация";
             ContentFilterButton.UseVisualStyleBackColor = true;
+            ContentFilterButton.CheckedChanged += ContentFilterButton_CheckedChanged;
             // 
             // OnlineFilterBox
             // 
@@ -290,17 +291,19 @@
             ChangePasswordButton.UseVisualStyleBackColor = true;
             ChangePasswordButton.Click += ChangePasswordButton_Click;
             // 
-            // button2
+            // AnalyticsButton
             // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(0, 623);
-            button2.Name = "button2";
-            button2.Size = new Size(270, 70);
-            button2.TabIndex = 18;
-            button2.Text = "Панель аналитики";
-            button2.TextAlign = ContentAlignment.MiddleRight;
-            button2.UseVisualStyleBackColor = true;
+            AnalyticsButton.BackgroundImage = (Image)resources.GetObject("AnalyticsButton.BackgroundImage");
+            AnalyticsButton.Enabled = false;
+            AnalyticsButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AnalyticsButton.Location = new Point(0, 623);
+            AnalyticsButton.Name = "AnalyticsButton";
+            AnalyticsButton.Size = new Size(270, 70);
+            AnalyticsButton.TabIndex = 18;
+            AnalyticsButton.Text = "Панель аналитики";
+            AnalyticsButton.TextAlign = ContentAlignment.MiddleRight;
+            AnalyticsButton.UseVisualStyleBackColor = true;
+            AnalyticsButton.Click += AnalyticsButton_Click;
             // 
             // MainWnd
             // 
@@ -308,8 +311,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1823, 856);
-            Controls.Add(button2);
+            ClientSize = new Size(1904, 961);
+            Controls.Add(AnalyticsButton);
             Controls.Add(ChangePasswordButton);
             Controls.Add(MLRecommendationsBox);
             Controls.Add(OnlineFilterBox);
@@ -367,7 +370,7 @@
         private CheckBox OnlineFilterBox;
         private CheckBox MLRecommendationsBox;
         public Button ChangePasswordButton;
-        public Button button2;
+        public Button AnalyticsButton;
     }
 }
 

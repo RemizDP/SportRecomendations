@@ -124,7 +124,7 @@ namespace Приложение_консультант_по_подбору_спо
                 MessageBox.Show("Данные успешно сохранены", "Успех");
                 mainWnd.LoadUserData();
                 int k = mainWnd.users.FindIndex(u => mainWnd.FindUserById(u, mainWnd.currUser.id));
-                mainWnd.users[k]= mainWnd.currUser;
+                mainWnd.users[k] = mainWnd.currUser;
             }
             mainWnd.authWnd.dataBase.CloseConnection();
             Close();
@@ -143,6 +143,6 @@ namespace Приложение_консультант_по_подбору_спо
         {
             mainWnd.ProfileButton.Enabled = true;
             mainWnd.WelcomeLabel.Text = "Добро пожаловать, " + NameBox.Text + "!";
-            }
+        }
     }
 }

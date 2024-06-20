@@ -227,12 +227,12 @@ namespace Приложение_консультант_по_подбору_спо
             }
             if (sumUnion == 0)
                 return 0;
-            double result = (double)sumBoth / sumUnion;
+            double result = (double)sumBoth / (double)sumUnion;
             return result * 2 - 1;
         }
 
         //сходство пользователей по оценкам секций
-        public double L1NormSimilarity_User(int user1_id, int user2_id, List<SportSection> user1RatedSections, List<SportSection> user2RatedSections)
+        public double L1NormSimilarity_User(List<SportSection> user1RatedSections, List<SportSection> user2RatedSections)
         {
             List<SportSection> sectionsList = new List<SportSection>();
             AddUniqueSections(ref sectionsList, user1RatedSections);
@@ -244,25 +244,26 @@ namespace Приложение_консультант_по_подбору_спо
                 int k1 = GetSectionIndex(section.id, user1RatedSections);
                 int k2 = GetSectionIndex(section.id, user2RatedSections);
 
-                if (k1 < 0 || k2 < 0)
-                    break;
-                double user1_rating = user1RatedSections.Find(s => FindSectionById(s, section.id)).normalizedRating;
-                double user2_rating = user2RatedSections.Find(s => FindSectionById(s, section.id)).normalizedRating;
-                double rating1;
-                double rating2;
-                if (user1_rating > user2_rating)
+                if (!(k1 < 0 || k2 < 0))
                 {
-                    rating1 = 1;
-                    rating2 = user2_rating / user1_rating;
+                    double user1_rating = user1RatedSections.Find(s => FindSectionById(s, section.id)).normalizedRating;
+                    double user2_rating = user2RatedSections.Find(s => FindSectionById(s, section.id)).normalizedRating;
+                    double rating1;
+                    double rating2;
+                    if (user1_rating > user2_rating)
+                    {
+                        rating1 = 1;
+                        rating2 = user2_rating / user1_rating;
+                    }
+                    else
+                    {
+                        rating1 = user1_rating / user2_rating;
+                        rating2 = 1;
+                    }
+                    double norm = (((double)1 / (Math.Abs(rating1 - rating2) + 1)) * 2) - 1;
+                    sum += norm;
+                    k++;
                 }
-                else
-                {
-                    rating1 = user1_rating / user2_rating;
-                    rating2 = 1;
-                }
-                double norm = (((double)1 / Math.Abs(rating1 - rating2) + 1) * 2) - 1;
-                sum += norm;
-                k++;
             }
             if (k == 0)
                 return -1;
@@ -282,6 +283,7 @@ namespace Приложение_консультант_по_подбору_спо
             {
                 double rating = 0;
                 int section_id = userRatings[i].section_id;
+                rating += userRatings[i].Decay();
                 for (int j = i + 1; j < userRatings.Count; j++)
                 {
                     if (userRatings[j].section_id == section_id)
@@ -304,7 +306,6 @@ namespace Приложение_консультант_по_подбору_спо
         }
         public void NormalizedToScaleUserRating(int user_id, List<Rating> userRatings, ref List<SportSection> userRatedSections)
         {
-
             int k1 = GetUserIndex(user_id);
             MaxUserRating(users[k1].id);
             List<double[]> result = new List<double[]>();
@@ -430,8 +431,8 @@ namespace Приложение_консультант_по_подбору_спо
                 result = sum1 / (Math.Sqrt(sum2) * Math.Sqrt(sum3));
             return result;
         }
-        // TODO для аналитики
-        public double[,] MatrixPearsonCorrelation_User(List<SportSection> user1RatedSections, List<SportSection> user2RatedSections)
+        // для аналитики
+        public double[,] MatrixPearsonCorrelation_User(int minRatedSections)
         {
             double[,] result = new double[users.Count, users.Count];
             for (int i = 0; i < users.Count; i++)
@@ -441,13 +442,28 @@ namespace Приложение_консультант_по_подбору_спо
                     if (i == j)
                         result[i, j] = 1;
                     else
-                        result[i, j] = PearsonCorrelation_User(users[i].id, users[j].id, user1RatedSections, user2RatedSections);
+                        result[i, j] = UsersSimilarity_Pearson(users[i].id, users[j].id, minRatedSections);
+                }
+            }
+            return result;
+        }
+        public double[,] MatrixL1Norm_User(int minRatedSections)
+        {
+            double[,] result = new double[users.Count, users.Count];
+            for (int i = 0; i < users.Count; i++)
+            {
+                for (int j = 0; j < users.Count; j++)
+                {
+                    if (i == j)
+                        result[i, j] = 1;
+                    else
+                        result[i, j] = UsersSimilarity_L1Norm(users[i].id, users[j].id, minRatedSections);
                 }
             }
             return result;
         }
 
-        public int PrepareDataForRecomendations(int user_id, out List<Rating> userRatings, out List<SportSection> ratedSections, int minRatedSectionsCount)
+        public int PrepareDataForRecommendations(int user_id, out List<Rating> userRatings, out List<SportSection> ratedSections, int minRatedSectionsCount)
         {
             int k = GetUserIndex(user_id);
             List<Rating> ratings1 = MaxUserRating(users[k].id);
@@ -466,12 +482,11 @@ namespace Приложение_консультант_по_подбору_спо
             List<Rating> user2Ratings;
             List<SportSection> ratedSections1;
             List<SportSection> ratedSections2;
-            int k1 = PrepareDataForRecomendations(user1_id, out user1Ratings, out ratedSections1, minRatedSections);
-            int k2 = PrepareDataForRecomendations(user2_id, out user2Ratings, out ratedSections2, minRatedSections);
+            int k1 = PrepareDataForRecommendations(user1_id, out user1Ratings, out ratedSections1, minRatedSections);
+            int k2 = PrepareDataForRecommendations(user2_id, out user2Ratings, out ratedSections2, minRatedSections);
             if (k1 < 0 || k2 < 0)
                 return -1;
-            double sum = 0;
-            return L1NormSimilarity_User(users[k1].id, users[k2].id, ratedSections1, ratedSections2);
+            return L1NormSimilarity_User(ratedSections1, ratedSections2);
         }
         public double UsersSimilarity_Pearson(int user1_id, int user2_id, int minRatedSections)
         {
@@ -479,8 +494,8 @@ namespace Приложение_консультант_по_подбору_спо
             List<Rating> user2Ratings;
             List<SportSection> ratedSections1;
             List<SportSection> ratedSections2;
-            int k1 = PrepareDataForRecomendations(user1_id, out user1Ratings, out ratedSections1, minRatedSections);
-            int k2 = PrepareDataForRecomendations(user2_id, out user2Ratings, out ratedSections2, minRatedSections);
+            int k1 = PrepareDataForRecommendations(user1_id, out user1Ratings, out ratedSections1, minRatedSections);
+            int k2 = PrepareDataForRecommendations(user2_id, out user2Ratings, out ratedSections2, minRatedSections);
             if (k1 < 0 || k2 < 0)
                 return -1;
             return PearsonCorrelation_User(users[k1].id, users[k2].id, ratedSections1, ratedSections2);
@@ -525,18 +540,19 @@ namespace Приложение_консультант_по_подбору_спо
             {
                 List<Rating> user1Ratings;
                 List<SportSection> ratedSections1;
-                int k = PrepareDataForRecomendations(user.id, out user1Ratings, out ratedSections1, minRatedSectionsCount);
-                if (k < 0)
-                    break;
-                int k1 = GetSectionIndex(section1_id, ratedSections1);
-                foreach (SportSection section2 in sections)
+                int k = PrepareDataForRecommendations(user.id, out user1Ratings, out ratedSections1, minRatedSectionsCount);
+                if (k >= 0)
                 {
-                    int k2 = GetSectionIndex(section2.id, ratedSections1);
-                    if (k1 != -1 && k2 != -1)
+                    int k1 = GetSectionIndex(section1_id, ratedSections1);
+                    foreach (SportSection section2 in sections)
                     {
-                        if (AdjustedLikenessOfOchiai_Content(usersList, ratedSections1[k1], ratedSections1[k2]) > thresholdValue)
+                        int k2 = GetSectionIndex(section2.id, ratedSections1);
+                        if (k1 != -1 && k2 != -1)
                         {
-                            result.Add(section2);
+                            if (AdjustedLikenessOfOchiai_Content(usersList, ratedSections1[k1], ratedSections1[k2]) > thresholdValue)
+                            {
+                                result.Add(section2);
+                            }
                         }
                     }
                 }
@@ -548,18 +564,19 @@ namespace Приложение_консультант_по_подбору_спо
                 {
                     List<Rating> user1Ratings;
                     List<SportSection> ratedSections1;
-                    int k = PrepareDataForRecomendations(user.id, out user1Ratings, out ratedSections1, minRatedSectionsCount);
-                    if (k < 0)
-                        break;
-                    int k1 = GetSectionIndex(section1_id, ratedSections1);
-                    foreach (SportSection section2 in sections)
+                    int k = PrepareDataForRecommendations(user.id, out user1Ratings, out ratedSections1, minRatedSectionsCount);
+                    if (k >= 0)
                     {
-                        int k2 = GetSectionIndex(section2.id, ratedSections1);
-                        if (k1 != -1 && k2 != -1)
+                        int k1 = GetSectionIndex(section1_id, ratedSections1);
+                        foreach (SportSection section2 in sections)
                         {
-                            if (AdjustedLikenessOfOchiai_Content(usersList, ratedSections1[k1], ratedSections1[k2]) > thresholdValue)
+                            int k2 = GetSectionIndex(section2.id, ratedSections1);
+                            if (k1 != -1 && k2 != -1)
                             {
-                                result.Add(section2);
+                                if (AdjustedLikenessOfOchiai_Content(usersList, ratedSections1[k1], ratedSections1[k2]) > thresholdValue)
+                                {
+                                    result.Add(section2);
+                                }
                             }
                         }
                     }
@@ -586,7 +603,7 @@ namespace Приложение_консультант_по_подбору_спо
             int currUserIndex = -1;
             for (int i = 0; currUserIndex < 0 && totalCount > 0; i++)
             {
-                currUserIndex = PrepareDataForRecomendations(user_id, out userRatings, out userRatedSections, totalCount);
+                currUserIndex = PrepareDataForRecommendations(user_id, out userRatings, out userRatedSections, totalCount);
                 if (currUserIndex < 0)
                     totalCount--;
             }
@@ -849,8 +866,8 @@ namespace Приложение_консультант_по_подбору_спо
                 //если секций мало, то можно добавить из списка оцененных
                 if (sectionsList.Count < totalCount)
                     AddUniqueSections(ref sectionsList, userRatedSections);
-
-
+                if (sectionsList.Count>totalCount)
+                    sectionsList = sectionsList.GetRange(0, totalCount);
                 totalCount = sectionsList.Count;
                 List<int> personalSectionsIndexes = new List<int>();
                 for (int i = 0; i < sectionsList.Count; i++)
@@ -892,10 +909,15 @@ namespace Приложение_консультант_по_подбору_спо
             {
                 int pos_x;
                 int pos_y = 0;
+                int y;
                 FlowLayoutPanel[] personalPanels = PersonalPanels(personalPanelsCount, colCount, x, 100, xMargin, yMargin, height, width, ref pos_y);
                 if (personalPanels == null)
+                {
                     PersonalLabel.Visible = false;
-                int y = pos_y;
+                    y = PersonalLabel.Location.Y+50;
+                }
+                else
+                    y = pos_y;
                 SemipersonalLabel = new Label();
                 Controls.Add(SemipersonalLabel);
                 SemipersonalLabel.AutoSize = true;
@@ -1037,12 +1059,13 @@ namespace Приложение_консультант_по_подбору_спо
 
         private void MainWnd_Load(object sender, EventArgs e)
         {
+            if (currUser.email == "admin")
+                AnalyticsButton.Enabled = true;
             SemipersonalLabel = new Label();
             Controls.Add(SemipersonalLabel);
             users = LoadUsers();
             sections = LoadSections();
             ratings = LoadRatings(30);
-            //Test3();
             UpdateRecommendationsButton_Click(UpdateRecommendationsButton, e);
         }
 
@@ -1054,7 +1077,6 @@ namespace Приложение_консультант_по_подбору_спо
             ProfileButton.Enabled = false;
         }
 
-        //TODO добавить окно о приложении
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox1 aboutBox = new AboutBox1();
@@ -1063,13 +1085,20 @@ namespace Приложение_консультант_по_подбору_спо
 
         private void UpdateRecommendationsButton_Click(object sender, EventArgs e)
         {
-            UpdateRecommendationsButton.Enabled = false;
-            WelcomeLabel.Text = "Добро пожаловать, " + currUser.name + "!";
-            SectionsRelevance();
-            Controls.Remove(SemipersonalLabel);
-            panels = CreatePanels(50, 5, 280, 40, 30, 280, 250, ref SemipersonalLabel);
-            MessageBox.Show("Рекомендации обновлены.");
-            UpdateRecommendationsButton.Enabled = true;
+            if (MLRecommendationsBox.Checked || RegressionButton.Checked || ContentFilterButton.Checked)
+            {
+                UpdateRecommendationsButton.Enabled = false;
+                WelcomeLabel.Text = "Добро пожаловать, " + currUser.name + "!";
+                SectionsRelevance();
+                Controls.Remove(SemipersonalLabel);
+                panels = CreatePanels(50, 5, 280, 40, 30, 280, 250, ref SemipersonalLabel);
+                MessageBox.Show("Рекомендации обновлены.");
+                UpdateRecommendationsButton.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Выберите режим работы рекомендаций", "Предупреждение");
+            }
         }
 
         private void TrainModelButton_Click(object sender, EventArgs e)
@@ -1102,6 +1131,21 @@ namespace Приложение_консультант_по_подбору_спо
             ChangePassword changeWnd = new ChangePassword();
             changeWnd.mainWnd = this;
             changeWnd.Show();
+        }
+
+        private void AnalyticsButton_Click(object sender, EventArgs e)
+        {
+            Analytics analyticsWnd = new Analytics();
+            analyticsWnd.mainWnd = this;
+            analyticsWnd.Show();
+        }
+
+        private void ContentFilterButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ContentFilterButton.Checked)
+                UserFilterBox.Enabled = false;
+            else
+                UserFilterBox.Enabled = true;
         }
         //______________________________________________________________________________________________________________________________
     }

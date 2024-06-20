@@ -286,6 +286,7 @@
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EditUserInfo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Информация о пользователе";
